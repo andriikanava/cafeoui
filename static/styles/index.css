@@ -1,0 +1,212 @@
+/* Black */
+@font-face {
+    font-family: "Circular";
+    src: url("../fonts/CircularStd-Black.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Circular";
+    src: url("../fonts/CircularStd-BlackItalic.otf") format("opentype");
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+  /* Bold */
+  @font-face {
+    font-family: "Circular";
+    src: url("../fonts/CircularStd-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Circular";
+    src: url("../fonts/CircularStd-BoldItalic.otf") format("opentype");
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  /* Book / Regular */
+  @font-face {
+    font-family: "Circular";
+    src: url("../fonts/CircularStd-Book.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Circular";
+    src: url("../fonts/CircularStd-BookItalic.otf") format("opentype");
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  /* Light */
+  @font-face {
+    font-family: "Circular";
+    src: url("../fonts/CircularStd-Light.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Circular";
+    src: url("../fonts/CircularStd-Light\ Italic.otf") format("opentype");
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  /* Medium */
+  @font-face {
+    font-family: "Circular";
+    src: url("../fonts/CircularStd-Medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Circular";
+    src: url("../fonts/CircularStd-MediumItalic.otf") format("opentype");
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  
+
+body {
+    background-color: #EDE5BB;
+    font-family: "Circular", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    align-items: center;
+
+    width: 100vw;      /* viewport width */
+    height: 90vh;     /* viewport height */
+    align-items: center;     /* по вертикали */
+    position: relative;      /* для позиционирования меню */
+    overflow: hidden;        /* обрезает лишнее фото */
+}
+
+.container img {
+    max-width: 60%;   /* Фото не выйдет за пределы контейнера */
+    height: auto;      /* Сохраняет пропорции */
+    display: block;    /* Убирает лишние отступы под изображением */
+    flex-shrink: 0;   
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;     /* по вертикали */
+}
+
+.menu img {
+    max-width: 65%;
+    height: auto;      /* Сохраняет пропорции */
+    display: block;    /* Убирает лишние отступы под изображением */
+}
+
+.menu-btn {
+    color: #95261F;
+    font-weight: 100;
+    font-size: 2vw;  
+    line-height: 1.8;             /* расстояние между строками */
+    text-decoration: none;         /* убираем стандартное подчеркивание */
+    display: inline-block;         /* чтобы работал border-bottom */
+    border-bottom: 1px solid #95261F;  /* черточка с цветом */
+    padding-bottom: 2px;           /* расстояние между текстом и черточкой */
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    align-items: center;
+
+    width: 100vw;      /* viewport width */
+    height: 100vh;     /* viewport height */
+
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    align-items: center;
+
+    width: 100vw;      /* viewport width */
+    height: 100vh; 
+}
+
+.text-container > img {
+    max-width: 40%;
+}
+
+.title {
+    color: #95261F;
+    font-weight: 100;
+    font-size: 3vw;             /* расстояние между строками */
+}
+
+.text {
+    color: #95261F;
+    font-weight: 100;
+    font-size: 2vw;             /* расстояние между строками */
+    font-style: italic;
+    padding-left: 10vh;
+    line-height: 1.8;  
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: auto;
+        gap: 10vh;  
+        padding-top: 10vh;
+    }
+    .container > img {
+        max-width: 100%;   /* Фото не выйдет за пределы контейнера */
+        object-fit: cover; 
+    }
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    
+        align-items: center;
+    
+        width: 100vw;      /* viewport width */
+        height: 100vh;     /* viewport height */
+        gap: 10vh;  
+    }
+    .menu-btn {
+        font-size: 5vw;
+    }
+    .menu img {
+        max-width: 50%;
+        height: auto;      /* Сохраняет пропорции */
+    }
+
+    .title {
+        color: #95261F;
+        font-weight: 100;
+        font-size: 6vw;             /* расстояние между строками */
+    }
+}
