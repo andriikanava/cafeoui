@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="./static/styles/menu.css">
 </head>
 <body>
-    <section class="hero">
-        <a href="index.html">
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <a href="index.html" class="hero__logo-link">
             <img class="hero__logo" src="static/logos/Logo-01.png" alt="Cafe OUI Logo">
         </a>
-        <div class="hero__nav">
+        
+        <nav class="hero__nav">
             <div class="nav__btn">
                 <a href="#pain">Pain</a>
                 <div class="line"></div>
@@ -29,122 +31,136 @@
                 <a href="#drinks">Cool Drinks</a>
                 <div class="line"></div>
             </div>
+        </nav>
         
-        </div>
         <a class="hero__scroll-button" href="#pain">
             <img src="static/illustrations/arrow_drop_down.png" alt="Scroll down">
         </a>
-    </section>
-    <section id="pain" class="menu__section">
-        <div class="menu__title">
-            <h2>Pain</h2>
-            <div class="line"></div>
-        </div>
-        <div class="menu__container">
-            <div class="menu__list">
-                <h3>Naturel/plain</h3>
-                <h3>Butter</h3>
-                <h3>Herb butter</h3>
-                <h3>Jam or  Nutella</h3>
-                <h3>Brie or cmembert</h3>
-                <h3>Cheese with walnuts</h3>
-                <h3>Cream cheese</h3>
-                <h3>Soft goat cheese</h3>
-                <h3>Smoked salmon</h3>
-                <h3>Tuna salad</h3>
-                <h3>Egg salad</h3>
-                <h3>Hummus</h3>
-                <h3>French ragout</h3>
-            </div>
-            <div class="gallery__grid">
-                <img src="static/photos/pexels-christina-polupanova-10281101.jpg" style="grid-column: 1 / span 2; grid-row: 1 / span 2;" alt="">
-                <img src="static/photos/pexels-rathaphon-nanthapreecha-6809019.jpg" style="grid-column: 3 / span 2; grid-row: 1" alt="">
-                <img src="static/photos/pexels-ready-made-3850327.jpg" style="grid-column: 3 / span 2; grid-row:2" alt="">
-            </div>
-        </div>
-    </section>
+    </header>
 
-    <section id="sweet" class="menu__section">
-        <div class="menu__title">
-            <h2>Sweet</h2>
-            <div class="line"></div>
-        </div>
-        <div class="menu__container">
-            <div class="menu__list">
-                <h3>Macarons (3 pieces)</h3>
-                <h4>Vanilla</h4>
-                <h4>Strawberries and Cream</h4>
-                <h4>Lemon Curd</h4>
-                <h4>Cookies and Cream</h4>
-                <h4>Blueberry</h4>
-                <h4>Chocolate</h4>
-                <h4>Mocha/Coffe</h4>
-                <h3>Paris-Brest</h3>
-                <h3>Cream Puffs</h3>
-                <h3>Eclair</h3>
-                <h3>Millefeuille</h3>
+    <main>
+        <!-- PAIN SECTION -->
+        <section id="pain" class="menu__section">
+            <div class="menu__title">
+                <h2>Pain</h2>
+                <div class="line"></div>
             </div>
-            <div class="gallery__grid">
-                <img src="static/photos/pexels-marta-dzedyshko-7597263.jpg" style="grid-column: 1 / span 4; grid-row: 1 / span 2;" alt="">
+            
+            <div class="menu__container">
+                <div class="menu__list">
+                    <h3>Naturel/plain</h3>
+                    <h3>Butter</h3>
+                    <h3>Herb butter</h3>
+                    <h3>Jam or Nutella</h3>
+                    <h3>Brie or cmembert</h3>
+                    <h3>Cheese with walnuts</h3>
+                    <h3>Cream cheese</h3>
+                    <h3>Soft goat cheese</h3>
+                    <h3>Smoked salmon</h3>
+                    <h3>Tuna salad</h3>
+                    <h3>Egg salad</h3>
+                    <h3>Hummus</h3>
+                    <h3>French ragout</h3>
+                </div>
                 
+                <div class="gallery__grid">
+                    <img src="static/photos/pexels-christina-polupanova-10281101.jpg" style="grid-column: 1 / span 2; grid-row: 1 / span 2;" alt="Fresh bread">
+                    <img src="static/photos/pexels-rathaphon-nanthapreecha-6809019.jpg" style="grid-column: 3 / span 2; grid-row: 1" alt="Croissants">
+                    <img src="static/photos/pexels-ready-made-3850327.jpg" style="grid-column: 3 / span 2; grid-row:2" alt="Pastry">
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="coffee" class="menu__section">
-        <div class="menu__title">
-            <h2>Coffee & Tea</h2>
-            <div class="line"></div>
-        </div>
-        <div class="menu__container">
-            <div class="menu__list">
-                <h3>Cappucino</h3>
-                <h3>Latte</h3>
-                <h3>Mocha</h3>
-                <h3>Espresso</h3>
-                <h3>Americano</h3>
-                <h3>Flat white</h3>
-                <h3>Tea</h3>
-                <h4>Black tea</h4>
-                <h4>Green tea</h4>
-                <h4>Herbal tea</h4>
-                <h4>Jasmine tea</h4>
-                <h4>Rooibos</h4>
+        <!-- SWEET SECTION -->
+        <section id="sweet" class="menu__section">
+            <div class="menu__title">
+                <h2>Sweet</h2>
+                <div class="line"></div>
             </div>
-            <div class="gallery__grid">
-                <img src="static/photos/pexels-lilartsy-1793035.jpg" style="grid-column: 1; grid-row: 1 / span 3;" alt="">
-                <img src="static/photos/pexels-maria-tyutina-814264.jpg" style="grid-column: 2; grid-row: 1 / span 3;" alt="">
-                <img src="static/photos/pexels-chevanon-photography-302902.jpg" style="grid-column: 3; grid-row: 1 / span 3" alt="">
-                <img src="static/photos/pexels-chevanon-photography-302890.jpg" style="grid-column: 4; grid-row: 1 / span 3" alt="">
+            
+            <div class="menu__container">
+                <div class="menu__list">
+                    <h3>Macarons (3 pieces)</h3>
+                    <h4>Vanilla</h4>
+                    <h4>Strawberries and Cream</h4>
+                    <h4>Lemon Curd</h4>
+                    <h4>Cookies and Cream</h4>
+                    <h4>Blueberry</h4>
+                    <h4>Chocolate</h4>
+                    <h4>Mocha/Coffe</h4>
+                    <h3>Paris-Brest</h3>
+                    <h3>Cream Puffs</h3>
+                    <h3>Eclair</h3>
+                    <h3>Millefeuille</h3>
+                </div>
+                
+                <div class="gallery__grid">
+                    <img src="static/photos/pexels-marta-dzedyshko-7597263.jpg" style="grid-column: 1 / span 4; grid-row: 1 / span 2;" alt="Colorful macarons">
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="drinks" class="menu__section">
-        <div class="menu__title">
-            <h2>Cold Drinks</h2>
-            <div class="line"></div>
-        </div>
-        <div class="menu__container">
-            <div class="menu__list">
-                <h3>Home-made lemonade</h3>
-                <h3>Jus d’organe</h3>
-                <h3>Apple juice</h3>
-                <h3>Ice tea</h3>
-                <h3>Flat water</h3>
-                <h3>Sparkling water</h3>
+        <!-- COFFEE & TEA SECTION -->
+        <section id="coffee" class="menu__section">
+            <div class="menu__title">
+                <h2>Coffee & Tea</h2>
+                <div class="line"></div>
             </div>
-            <div class="gallery__grid">
-                <img src="static/photos/pexels-chevanon-photography-302902.jpg" style="grid-column: 1 / span 1; grid-row: 1 / span 2;" alt="">
-                <img src="static/photos/pexels-chevanon-photography-302904.jpg" style="grid-column: 2 / span 1; grid-row: 1 / span 2;" alt="">
-                <img src="static/photos/pexels-chevanon-photography-302894.jpg" style="grid-column: 3 / span 1; grid-row: 1 / span 2;" alt="">
-                <img src="static/photos/pexels-chevanon-photography-333523.jpg" style="grid-column: 4 / span 1; grid-row: 1 / span 2;" alt="">
+            
+            <div class="menu__container">
+                <div class="menu__list">
+                    <h3>Cappucino</h3>
+                    <h3>Latte</h3>
+                    <h3>Mocha</h3>
+                    <h3>Espresso</h3>
+                    <h3>Americano</h3>
+                    <h3>Flat white</h3>
+                    <h3>Tea</h3>
+                    <h4>Black tea</h4>
+                    <h4>Green tea</h4>
+                    <h4>Herbal tea</h4>
+                    <h4>Jasmine tea</h4>
+                    <h4>Rooibos</h4>
+                </div>
+                
+                <div class="gallery__grid">
+                    <img src="static/photos/pexels-lilartsy-1793035.jpg" style="grid-column: 1; grid-row: 1 / span 3;" alt="Coffee art">
+                    <img src="static/photos/pexels-maria-tyutina-814264.jpg" style="grid-column: 2; grid-row: 1 / span 3;" alt="Tea preparation">
+                    <img src="static/photos/pexels-chevanon-photography-302902.jpg" style="grid-column: 3; grid-row: 1 / span 3" alt="Coffee making">
+                    <img src="static/photos/pexels-chevanon-photography-302890.jpg" style="grid-column: 4; grid-row: 1 / span 3" alt="Coffee beans">
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-     <!-- FOOTER SECTION -->
-     <footer class="footer">
+        <!-- DRINKS SECTION -->
+        <section id="drinks" class="menu__section">
+            <div class="menu__title">
+                <h2>Cold Drinks</h2>
+                <div class="line"></div>
+            </div>
+            
+            <div class="menu__container">
+                <div class="menu__list">
+                    <h3>Home-made lemonade</h3>
+                    <h3>Jus d'organe</h3>
+                    <h3>Apple juice</h3>
+                    <h3>Ice tea</h3>
+                    <h3>Flat water</h3>
+                    <h3>Sparkling water</h3>
+                </div>
+                
+                <div class="gallery__grid">
+                    <img src="static/photos/pexels-chevanon-photography-302902.jpg" style="grid-column: 1 / span 1; grid-row: 1 / span 2;" alt="Refreshing drink">
+                    <img src="static/photos/pexels-chevanon-photography-302904.jpg" style="grid-column: 2 / span 1; grid-row: 1 / span 2;" alt="Cold beverage">
+                    <img src="static/photos/pexels-chevanon-photography-302894.jpg" style="grid-column: 3 / span 1; grid-row: 1 / span 2;" alt="Coffee cup">
+                    <img src="static/photos/pexels-chevanon-photography-333523.jpg" style="grid-column: 4 / span 1; grid-row: 1 / span 2;" alt="Coffee beans closeup">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
         <nav class="footer__nav">
             <img class="footer__logo" src="static/logos/Logo-01.png" alt="Cafe OUI Logo">
             <a href="#" class="footer__link">Menu</a>
@@ -152,11 +168,13 @@
             <a href="#" class="footer__link">Impressions</a>
             <a href="#" class="footer__link">Contact</a>
         </nav>
+        
         <div class="footer__info">
             <div class="footer__column">
                 <p class="footer__text">Zaagmuldersweg 3, 9713 LB Groningen</p>
                 <p class="footer__text">Weekdays: 7am - 3pm<br>Weekends & Holidays: 8am - 3pm</p>
             </div>
+            
             <div class="footer__column">
                 <p class="footer__text">+31 6 31782094</p>
                 <p class="footer__text">claire@oui-cafe.fr</p>
