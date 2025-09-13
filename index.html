@@ -2,36 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./static/styles/index.css">
     <title>Cafe OUI</title>
 </head>
 <body>
-    <div class="hero-container">
-        <div class="container">
-            <img src="static/photos/pexels-marta-dzedyshko-7597263.png" alt="macaroons">
-            <div class="menu">
-                <img class="logo" src="static/logos/Logo-01.png" alt="Logo">
-                <a href="" class="menu-btn">Menu</a>
-                <a href="" class="menu-btn">About us</a>
-                <a href="" class="menu-btn">Impressions</a>
-                <a href="" class="menu-btn">Contact</a>
-            </div>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero__container">
+            <img class="hero__image" src="static/photos/pexels-marta-dzedyshko-7597263.png" alt="Macarons">
+            <nav class="hero__nav">
+                <img class="hero__logo" src="static/logos/Logo-01.png" alt="Cafe OUI Logo">
+                <a href="menu.html" class="hero__link">Menu</a>
+                <a href="#" class="hero__link">About us</a>
+                <a href="#" class="hero__link">Impressions</a>
+                <a href="#" class="hero__link">Contact</a>
+            </nav>
         </div>
-        <a class="drop_down_btn" href="">
-            <img src="static/illustrations/arrow_drop_down.png" alt="drop down arrow">
+        <a class="hero__scroll-button" href="#about">
+            <img src="static/illustrations/arrow_drop_down.png" alt="Scroll down">
         </a>
-    </div>
-    <div class="about-container">
-        <h2 class="title">A pause, a moment, a Oui.</h3>
-        <div class="container">
-            <div class="text-container">
-                <h2 class="text">OUI is more than a café — it is a celebration of elegance, simplicity, and the beauty of the moment. Inspired by French lifestyle and calm sophistication, we serve coffee, tea, and light treats in an atmosphere designed to slow you down and invite you to breathe. At OUI, every detail — from the space to the flavor — is crafted to say “yes” to life.</h3>
-                <a href="" class="link-btn">Explore the history of OUI</a>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+        <h2 class="about__title">A pause, a moment, a Oui.</h2>
+        <div class="about__container">
+            <div class="about__content">
+                <p class="about__text">
+                    OUI is more than a café — it is a celebration of elegance, simplicity, and the beauty of the moment. 
+                    Inspired by French lifestyle and calm sophistication, we serve coffee, tea, and light treats in an atmosphere 
+                    designed to slow you down and invite you to breathe. At OUI, every detail — from the space to the flavor — 
+                    is crafted to say “yes” to life.
+                </p>
+                <a href="#" class="about__link">Explore the history of OUI</a>
             </div>
-            <img src="static/photos/pexels-marta-dzedyshko-7597271.jpg" alt="macaroons">
+            <img class="about__image" src="static/photos/pexels-marta-dzedyshko-7597271.jpg" alt="Macarons">
         </div>
-    </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section class="gallery">
+        <div class="gallery__grid">
+            <img class="gallery__item" src="static/photos/pexels-maria-tyutina-814264.jpg" alt="Tea">
+            <img class="gallery__item" src="static/photos/pexels-rathaphon-nanthapreecha-6809019.jpg" alt="Croissants">
+            <img class="gallery__item" src="static/photos/pexels-chevanon-photography-333523.jpg" alt="Coffee beans">
+            <img class="gallery__item" src="static/photos/pexels-chevanon-photography-302894.jpg" alt="Coffee">
+        </div>
+        <a href="#" class="gallery__link">Your moment of flavor starts here</a>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+        <nav class="footer__nav">
+            <img class="footer__logo" src="static/logos/Logo-01.png" alt="Cafe OUI Logo">
+            <a href="menu.html" class="footer__link">Menu</a>
+            <a href="#" class="footer__link">About us</a>
+            <a href="#" class="footer__link">Impressions</a>
+            <a href="#" class="footer__link">Contact</a>
+        </nav>
+        <div class="footer__info">
+            <div class="footer__column">
+                <p class="footer__text">Zaagmuldersweg 3, 9713 LB Groningen</p>
+                <p class="footer__text">Weekdays: 7am - 3pm<br>Weekends & Holidays: 8am - 3pm</p>
+            </div>
+            <div class="footer__column">
+                <p class="footer__text">+31 6 31782094</p>
+                <p class="footer__text">claire@oui-cafe.fr</p>
+                <p class="footer__text"><strong>En</strong>/Nl/Fr</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

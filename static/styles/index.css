@@ -1,212 +1,378 @@
-/* Black */
+/* ------------------- Fonts ------------------- */
 @font-face {
-    font-family: "Circular";
-    src: url("../fonts/CircularStd-Black.otf") format("opentype");
-    font-weight: 900;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: "Circular";
-    src: url("../fonts/CircularStd-BlackItalic.otf") format("opentype");
-    font-weight: 900;
-    font-style: italic;
-  }
-  
-  /* Bold */
-  @font-face {
-    font-family: "Circular";
-    src: url("../fonts/CircularStd-Bold.otf") format("opentype");
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: "Circular";
-    src: url("../fonts/CircularStd-BoldItalic.otf") format("opentype");
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-  /* Book / Regular */
-  @font-face {
-    font-family: "Circular";
-    src: url("../fonts/CircularStd-Book.otf") format("opentype");
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: "Circular";
-    src: url("../fonts/CircularStd-BookItalic.otf") format("opentype");
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  /* Light */
-  @font-face {
-    font-family: "Circular";
-    src: url("../fonts/CircularStd-Light.otf") format("opentype");
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: "Circular";
-    src: url("../fonts/CircularStd-Light\ Italic.otf") format("opentype");
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  /* Medium */
-  @font-face {
-    font-family: "Circular";
-    src: url("../fonts/CircularStd-Medium.otf") format("opentype");
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: "Circular";
-    src: url("../fonts/CircularStd-MediumItalic.otf") format("opentype");
-    font-weight: 500;
-    font-style: italic;
-  }
-  
-  
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-BlackItalic.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-Book.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-BookItalic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-Light Italic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-MediumItalic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
 
+/* ------------------- Base Styles ------------------- */
 body {
-    background-color: #EDE5BB;
-    font-family: "Circular", sans-serif;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
+  background-color: #EDE5BB;
+  font-family: "Circular", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-
-    align-items: center;
-
-    width: 100vw;      /* viewport width */
-    height: 90vh;     /* viewport height */
-    align-items: center;     /* по вертикали */
-    position: relative;      /* для позиционирования меню */
-    overflow: hidden;        /* обрезает лишнее фото */
+html {
+  scroll-behavior: smooth;
 }
 
-.container img {
-    max-width: 60%;   /* Фото не выйдет за пределы контейнера */
-    height: auto;      /* Сохраняет пропорции */
-    display: block;    /* Убирает лишние отступы под изображением */
-    flex-shrink: 0;   
+/* ------------------- HERO SECTION ------------------- */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  border-bottom: 1px solid black;
 }
 
-.menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;     /* по вертикали */
+.hero__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
 }
 
-.menu img {
-    max-width: 65%;
-    height: auto;      /* Сохраняет пропорции */
-    display: block;    /* Убирает лишние отступы под изображением */
+.hero__image {
+  max-width: 60%;
+  height: auto;
+  display: block;
+  flex-shrink: 0;
 }
 
-.menu-btn {
-    color: #95261F;
-    font-weight: 100;
-    font-size: 2vw;  
-    line-height: 1.8;             /* расстояние между строками */
-    text-decoration: none;         /* убираем стандартное подчеркивание */
-    display: inline-block;         /* чтобы работал border-bottom */
-    border-bottom: 1px solid #95261F;  /* черточка с цветом */
-    padding-bottom: 2px;           /* расстояние между текстом и черточкой */
+.hero__nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.hero-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-
-    align-items: center;
-
-    width: 100vw;      /* viewport width */
-    height: 100vh;     /* viewport height */
-
+.hero__logo {
+  max-width: 65%;
+  height: auto;
+  display: block;
 }
 
-.about-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-
-    align-items: center;
-
-    width: 100vw;      /* viewport width */
-    height: 100vh; 
+.hero__link {
+  color: #95261F;
+  font-weight: 100;
+  font-size: 2vw;
+  line-height: 1.8;
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 1px solid #95261F;
+  padding-bottom: 2px;
 }
 
-.text-container > img {
-    max-width: 40%;
+.hero__scroll-button {
+  display: block;
+  margin-top: auto;
+  margin-bottom: 2vh;
 }
 
-.title {
-    color: #95261F;
-    font-weight: 100;
-    font-size: 3vw;             /* расстояние между строками */
+/* ------------------- ABOUT SECTION ------------------- */
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  border-bottom: 1px solid black;
 }
 
-.text {
-    color: #95261F;
-    font-weight: 100;
-    font-size: 2vw;             /* расстояние между строками */
-    font-style: italic;
-    padding-left: 10vh;
-    line-height: 1.8;  
+.about__container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: auto;
+  gap: 15vh;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
 }
 
+.about__content {
+  padding-left: 10vh;
+}
 
+.about__title {
+  color: #95261F;
+  font-weight: 100;
+  font-size: 3vw;
+  padding-top: 5vh;
+}
 
+.about__text {
+  color: #95261F;
+  font-weight: 100;
+  font-size: 2vw;
+  font-style: italic;
+  line-height: 1.8;
+  margin: 0 0 2rem 0;
+}
+
+.about__image {
+  max-width: 40%;
+  height: auto;
+  display: block;
+  flex-shrink: 0;
+}
+
+.about__link {
+  color: #95261F;
+  font-weight: 500;
+  font-size: 2vw;
+  font-style: italic;
+  text-decoration: none;
+}
+
+/* ------------------- GALLERY SECTION ------------------- */
+.gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  border-bottom: 1px solid black;
+  position: relative;
+}
+
+.gallery__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40vh 40vh;
+  gap: 2%;
+  max-width: 60vw;
+}
+
+.gallery__item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery__link {
+  color: #95261F;
+  font-weight: 500;
+  font-size: 2vw;
+  font-style: italic;
+  width: 20vh;
+  padding-left: 3vh;
+  text-decoration: none;
+}
+
+/* ------------------- FOOTER SECTION ------------------- */
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5vh 0;
+  width: 100vw;
+  height: 30vh;
+  background-color: #EDE5BB;
+  background-image: url("../illustrations/croissant/illustrations_light blue_croissant.png");
+  background-repeat: repeat;
+  background-size: 25%;
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__logo {
+  max-width: 40%;
+  height: auto;
+  display: block;
+}
+
+.footer__link {
+  color: #95261F;
+  font-weight: 100;
+  font-size: 1.6vw;
+  line-height: 1.8;
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 1px solid #95261F;
+  padding-bottom: 2px;
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: row;
+  gap: 5vw;
+  padding-right: 10vh;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+.footer__text {
+  color: #95261F;
+  font-weight: 100;
+  font-size: 1.6vw;
+  font-style: normal;
+  margin: 0;
+  margin-bottom: 6%;
+}
+
+/* ------------------- MOBILE RESPONSIVENESS ------------------- */
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        justify-content: flex-start;
-        height: auto;
-        gap: 10vh;  
-        padding-top: 10vh;
-    }
-    .container > img {
-        max-width: 100%;   /* Фото не выйдет за пределы контейнера */
-        object-fit: cover; 
-    }
-    .hero-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    
-        align-items: center;
-    
-        width: 100vw;      /* viewport width */
-        height: 100vh;     /* viewport height */
-        gap: 10vh;  
-    }
-    .menu-btn {
-        font-size: 5vw;
-    }
-    .menu img {
-        max-width: 50%;
-        height: auto;      /* Сохраняет пропорции */
-    }
-
-    .title {
-        color: #95261F;
-        font-weight: 100;
-        font-size: 6vw;             /* расстояние между строками */
-    }
+  .hero__container {
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto;
+    padding-top: 10vh;
+  }
+  
+  .hero__image {
+    max-width: 100%;
+    object-fit: cover;
+  }
+  
+  .hero {
+    gap: 10vh;
+  }
+  
+  .hero__logo {
+    max-width: 50%;
+  }
+  
+  .hero__link {
+    font-size: 5vw;
+  }
+  
+  .footer__link {
+    font-size: 3vw;
+  }
+  
+  .footer__text {
+    font-size: 3vw;
+  }
+  
+  .footer__info {
+    padding-right: 4vh;
+  }
+  
+  .footer {
+    padding: 1vh 0;
+    background-size: 45%;
+  }
+  
+  .about__title {
+    font-size: 6vw;
+    padding-top: 1vh;
+  }
+  
+  .about__container {
+    gap: 7vh;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .about__text {
+    padding: 0 3vh;
+    font-size: 5vw;
+  }
+  
+  .about__link {
+    padding-left: 3vh;
+    font-size: 5vw;
+  }
+  
+  .about__image {
+    max-width: 60%;
+  }
+  
+  .about__content {
+    padding-left: 0;
+  }
+  
+  .gallery {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5vh;
+  }
+  
+  .gallery__grid {
+    grid-template-rows: 40vh 40vh;
+    padding-top: 5vh;
+    max-width: 80vw;
+  }
+  
+  .gallery__link {
+    font-size: 5vw;
+  }
 }
