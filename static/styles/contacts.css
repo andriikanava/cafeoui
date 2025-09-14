@@ -98,7 +98,7 @@ html {
   padding-top: 20vh;
 }
 
-.logo__container h2 {
+.logo__text {
   color: #EDE5BB;
   font-weight: 600;
   text-align: center;
@@ -111,17 +111,21 @@ html {
   max-width: 55%;
 }
 
-.hero__logo-link img {
+.hero__logo {
   display: block;
   width: 100%;
   height: auto;
 }
 
-.hero__text h3 {
+.hero__text {
+  text-align: center;
+}
+
+.hero__address,
+.hero__hours {
   padding-top: 3vh;
   color: #EDE5BB;
   font-weight: 100;
-  text-align: center;
   font-size: 1.5vw;
   margin: 0;
 }
@@ -213,22 +217,28 @@ html {
 
 /* ------------------- MOBILE RESPONSIVENESS ------------------- */
 @media (max-width: 768px) {
-  .hero__text h3 {
+  .hero__address,
+  .hero__hours {
       font-size: 4vw;
   }
-  .logo__container h2 {
+  
+  .logo__text {
       font-size: 8vw;
   }
+  
   .hero {
       gap: 18vh;
       background-size: 35%;
   }
+  
   .footer__link {
       font-size: 3vw;
   }
+  
   .footer__text {
       font-size: 3vw;
   }
+  
   .footer__info {
       padding-right: 4vh;
   }
