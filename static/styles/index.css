@@ -142,6 +142,7 @@ html {
   width: 100vw;
   height: 100vh;
   border-bottom: 1px solid black;
+  overflow: hidden;
 }
 
 .about__container {
@@ -224,7 +225,9 @@ html {
   font-style: italic;
   width: 20vh;
   padding-left: 3vh;
+  padding-bottom: 10vh;
   text-decoration: none;
+  align-self: flex-end;
 }
 
 /* ------------------- FOOTER SECTION ------------------- */
@@ -374,5 +377,7 @@ html {
   
   .gallery__link {
     font-size: 5vw;
+    align-self: flex-start;
+    padding-left: 5vh;
   }
 }
