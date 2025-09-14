@@ -1,0 +1,235 @@
+/* ------------------- Fonts ------------------- */
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-BlackItalic.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-Book.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-BookItalic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-Light Italic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-MediumItalic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* ------------------- Base Styles ------------------- */
+body {
+  background-color: #00657C;
+  font-family: "Circular", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  border-bottom: 1px solid black;
+  overflow: hidden;
+  gap: 13vh;
+
+  background-image: url("../illustrations/merengue/illustrations_red_merengue.png");
+  background-repeat: repeat;
+  background-size: 18%;
+}
+
+.logo__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding-top: 20vh;
+}
+
+.logo__container h2 {
+  color: #EDE5BB;
+  font-weight: 600;
+  text-align: center;
+  font-size: 4vw;
+  margin: 0;
+}
+
+.hero__logo-link {
+  display: inline-block;
+  max-width: 55%;
+}
+
+.hero__logo-link img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero__text h3 {
+  padding-top: 3vh;
+  color: #EDE5BB;
+  font-weight: 100;
+  text-align: center;
+  font-size: 1.5vw;
+  margin: 0;
+}
+
+.contact__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+  border-bottom: 1px solid black;
+  overflow: hidden;
+}
+
+/* MAP */
+.map__wrapper {
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  aspect-ratio: 3 / 2;
+  margin: 5vh auto 0;
+}
+
+.map__wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ------------------- FOOTER SECTION ------------------- */
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5vh 0;
+  width: 100vw;
+  height: 20vh;
+}
+  
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 1;
+}
+  
+.footer__logo {
+  max-width: 120px;
+  height: auto;
+  display: block;
+}
+  
+.footer__link {
+  color: #EDE5BB;
+  font-weight: 100;
+  font-size: 1.4vw;
+  line-height: 1.4;
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 1px solid #EDE5BB;
+  padding-bottom: 2px;
+}
+  
+.footer__info {
+  display: flex;
+  flex-direction: row;
+  gap: 5vw;
+}
+  
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+  
+.footer__text {
+  color: #EDE5BB;
+  font-weight: 100;
+  font-size: 1.3vw;
+  font-style: normal;
+  margin: 0;
+  margin-bottom: 6%;
+}
+
+/* ------------------- MOBILE RESPONSIVENESS ------------------- */
+@media (max-width: 768px) {
+  .hero__text h3 {
+      font-size: 4vw;
+  }
+  .logo__container h2 {
+      font-size: 8vw;
+  }
+  .hero {
+      gap: 18vh;
+      background-size: 35%;
+  }
+  .footer__link {
+      font-size: 3vw;
+  }
+  .footer__text {
+      font-size: 3vw;
+  }
+  .footer__info {
+      padding-right: 4vh;
+  }
+}
