@@ -74,6 +74,7 @@
     scroll-behavior: smooth;
   }
   
+  /* ------------------- HERO SECTION ------------------- */
   .hero {
     display: flex;
     flex-direction: column;
@@ -85,12 +86,12 @@
     gap: 10vh;
     overflow: hidden;
   
-    background-image: url("../illustrations/tea/illustrations_light\ blue_tea.png");
+    background-image: url("../illustrations/tea/illustrations_light blue_tea.png");
     background-repeat: repeat;
     background-size: 15%;
   }
 
-  .hero h2 {
+  .hero__tagline {
     color: #95261F;
     font-weight: 600;
     padding-top: 5vh;             
@@ -103,10 +104,10 @@
     padding-top: 25vh;
   }
   
-  .croissant__container {
+  /* ------------------- CONTENT SECTIONS ------------------- */
+  .content-section {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
@@ -114,208 +115,164 @@
     overflow: hidden;
   }
 
-  .croissant__container h3 {
+  .content__text {
     color: #95261F;
     font-weight: 100;
-    padding-top: 5vh;            
     text-align: left;
     font-size: 2.5vw;
     font-style: normal;
-    max-width: 70vw;     
+    max-width: 40vw;
+  }
+
+  .image__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 30vw;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    padding: 0 5vh;
+  }
+
+  .image__container img {
+    max-width: 100%;
+    max-height: 100%;
+    height: 70vh;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* ------------------- CROISSANT SECTION ------------------- */
+  .croissant__container {
+    flex-direction: column;
+  }
+
+  .croissant__container .content__text {
+    max-width: 70vw;
+    padding-top: 5vh;
   }
 
   .croissant__container .image__container {
-    display: flex;
-    justify-content: center;   
-    align-items: center;       
-    flex-wrap: wrap;           
-    gap: 2%;                   
+    flex-wrap: wrap;
+    gap: 2%;
     max-width: 70vw;
-    width: 100%;
-    height: 60vh;              
-    overflow: hidden;
+    height: 60vh;
     padding-top: 12vh;
   }
 
   .croissant__container .image__container img {
-    flex: 1 1 auto;            
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;         
-    display: block;
+    flex: 1 1 auto;
+    height: auto;
   }
-
+  
+  /* ------------------- COFFEE SECTION ------------------- */
   .coffee__container {
-    display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    border-bottom: 1px solid black;
-    overflow: hidden;
   }
 
-  .coffee__container h3 {
-    color: #95261F;
-    font-weight: 100;
-    padding-top: 13vh;             
-    text-align: left;
-    font-size: 2.5vw;
-    font-style: normal;
-    max-width: 40vw;     
+  .coffee__container .content__text {
+    padding-top: 13vh;
     align-self: flex-start;
   }
-
-  .coffee__container .image__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;     
-    max-width: 30vw;
-    width: 100%;
-    height: 70vh;
-    overflow: hidden;
-    padding-left: 5vh;
-    padding-right: 5vh;
-  }
-
-  .coffee__container .image__container img {
-    max-width: 100%;
-    max-height: 100%;
-    height: 70vh;
-    object-fit: cover;
-    display: block;
-  }
-
+  
+  /* ------------------- TEA SECTION ------------------- */
   .tea__container {
-    display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    border-bottom: 1px solid black;
-    overflow: hidden;
   }
-  
-  .tea__container h3 {
-    color: #95261F;
-    font-weight: 100;
-    padding-top: 13vh;             
-    text-align: left;
-    font-size: 2.5vw;
-    font-style: normal;
-    max-width: 40vw;     
+
+  .tea__container .content__text {
+    padding-top: 13vh;
     align-self: flex-start;
   }
   
-  .tea__container .image__container {
+  /* ------------------- FOOTER SECTION ------------------- */
+  .footer {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vh 0;
+    width: 100vw;
+    height: 30vh;
+    background-color: #EDE5BB;
+    background-image: url("../illustrations/croissant/illustrations_light blue_croissant.png");
+    background-repeat: repeat;
+    background-size: 25%;
+  }
+
+  .footer__nav {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;     
-    max-width: 30vw;
-    width: 100%;
-    height: 70vh;
-    overflow: hidden;
-    padding-left: 5vh;
-    padding-right: 5vh;
   }
-  
-  .tea__container .image__container img {
-    max-width: 100%;
-    max-height: 100%;
-    height: 70vh;
-    object-fit: cover;
+
+  .footer__logo {
+    max-width: 40%;
+    height: auto;
     display: block;
   }
 
-  /* ------------------- FOOTER SECTION ------------------- */
-.footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5vh 0;
-  width: 100vw;
-  height: 30vh;
-  background-color: #EDE5BB;
-  background-image: url("../illustrations/croissant/illustrations_light blue_croissant.png");
-  background-repeat: repeat;
-  background-size: 25%;
-}
+  .footer__link {
+    color: #95261F;
+    font-weight: 100;
+    font-size: 1.6vw;
+    line-height: 1.8;
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 1px solid #95261F;
+    padding-bottom: 2px;
+  }
 
-.footer__nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  .footer__info {
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+    padding-right: 10vh;
+  }
 
-.footer__logo {
-  max-width: 40%;
-  height: auto;
-  display: block;
-}
+  .footer__column {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+  }
 
-.footer__link {
-  color: #95261F;
-  font-weight: 100;
-  font-size: 1.6vw;
-  line-height: 1.8;
-  text-decoration: none;
-  display: inline-block;
-  border-bottom: 1px solid #95261F;
-  padding-bottom: 2px;
-}
-
-.footer__info {
-  display: flex;
-  flex-direction: row;
-  gap: 5vw;
-  padding-right: 10vh;
-}
-
-.footer__column {
-  display: flex;
-  flex-direction: column;
-  gap: 1vh;
-}
-
-.footer__text {
-  color: #95261F;
-  font-weight: 100;
-  font-size: 1.6vw;
-  font-style: normal;
-  margin: 0;
-  margin-bottom: 6%;
-}
-
-
+  .footer__text {
+    color: #95261F;
+    font-weight: 100;
+    font-size: 1.6vw;
+    font-style: normal;
+    margin: 0;
+    margin-bottom: 6%;
+  }
   
-@media (max-width: 768px) {
+  /* ------------------- MOBILE RESPONSIVENESS ------------------- */
+  @media (max-width: 768px) {
     .hero {
         background-size: 30%;
     }
-    .hero h2 {
+    
+    .hero__tagline {
         font-size: 2vh;
     }
+    
     .croissant__container .image__container {
-        height: auto;              
-        max-width: 90vw;           
+        height: auto;
+        max-width: 90vw;
         padding-top: 15vh;
         flex-direction: column;
     }
 
     .croissant__container .image__container img {
-      object-fit: cover;       
+      object-fit: cover;
       width: 100%;
-      height: auto;               
-      margin: 0 auto;            
+      height: auto;
+      margin: 0 auto;
     }
 
-    .croissant__container h3 {
+    .croissant__container .content__text {
       font-size: 2.5vh;
       text-align: center;
       align-self: center;
@@ -337,7 +294,8 @@
       width: 100%;
       height: auto;
     }
-    .coffee__container h3 {
+    
+    .coffee__container .content__text {
         font-size: 2.5vh;
         text-align: center;
         max-width: 90vw;
@@ -355,6 +313,7 @@
         height: auto;
         padding: 0;
         padding-top: 5vh;
+        order: 2;
       }
     
       .tea__container .image__container img {
@@ -362,12 +321,13 @@
         height: auto;
       }
     
-      .tea__container h3 {
+      .tea__container .content__text {
         font-size: 2.5vh;
         text-align: center;
         max-width: 90vw;
         align-self: center;
         padding-top: 3vh;
+        order: 1;
       }
 
       .footer__link {
@@ -386,4 +346,4 @@
         padding: 1vh 0;
         background-size: 45%;
       }
-}
+  }
