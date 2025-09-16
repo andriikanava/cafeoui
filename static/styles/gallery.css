@@ -1,0 +1,140 @@
+/* ------------------- Fonts ------------------- */
+@font-face {
+    font-family: "Circular";
+    src: url("../fonts/CircularStd-Black.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Circular";
+    src: url("../fonts/CircularStd-BlackItalic.otf") format("opentype");
+    font-weight: 900;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Circular";
+    src: url("../fonts/CircularStd-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Circular";
+    src: url("../fonts/CircularStd-BoldItalic.otf") format("opentype");
+    font-weight: 700;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Circular";
+    src: url("../fonts/CircularStd-Book.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Circular";
+    src: url("../fonts/CircularStd-BookItalic.otf") format("opentype");
+    font-weight: 400;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Circular";
+    src: url("../fonts/CircularStd-Light.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Circular";
+    src: url("../fonts/CircularStd-Light Italic.otf") format("opentype");
+    font-weight: 300;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Circular";
+    src: url("../fonts/CircularStd-Medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Circular";
+    src: url("../fonts/CircularStd-MediumItalic.otf") format("opentype");
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  /* ------------------- Base Styles ------------------- */
+  body {
+    background-color: #BAD3EE;
+    font-family: "Circular", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* ------------------- HERO SECTION ------------------- */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    border-bottom: 1px solid black;
+    gap: 5vh;
+    overflow: hidden;
+  
+    background-image: url("../illustrations/croissant/illustrations_yellow_croissant.png");
+    background-repeat: repeat;
+    background-size: 15%;
+  }
+
+  .hero__tagline {
+    color: #95261F;
+    font-weight: 600;
+    padding-top: 5vh;             
+    text-align: center;
+    font-size: 2vw;
+    font-style: italic;
+  }
+  
+  .hero__logo {
+    padding-top: 25vh;
+  }
+
+  .hero__text {
+    padding-top: 10vh;
+  }
+
+  .hero__text h2 {
+    color: #95261F;
+    font-weight: 500;          
+    text-align: center;
+    font-size: 2vw;
+    font-style: normal;
+  }
+
+  .hero__text h3 {
+    color: #95261F;
+    font-weight: 100;            
+    text-align: center;
+    font-size: 2vw;
+    font-style: normal;
+  }
+
+/* ------------------- MOBILE RESPONSIVENESS ------------------- */
+@media (max-width: 768px) {
+    .hero__text h2 {
+        font-size: 4vw;
+      }
+    
+      .hero__text h3 {
+        font-size: 4vw;
+      }
+    
+    .hero {
+        background-size: 35%;
+    }
+}
