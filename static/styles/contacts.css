@@ -83,7 +83,7 @@ html {
   height: 100vh;
   border-bottom: 1px solid black;
   overflow: hidden;
-  gap: 13vh;
+  gap: 8vh;
 
   background-image: url("../illustrations/merengue/illustrations_red_merengue.png");
   background-repeat: repeat;
@@ -227,7 +227,7 @@ html {
   }
   
   .hero {
-      gap: 18vh;
+      gap: 13vh;
       background-size: 35%;
   }
   

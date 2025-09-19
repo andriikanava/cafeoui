@@ -83,7 +83,7 @@
     width: 100vw;
     height: 100vh;
     border-bottom: 1px solid black;
-    gap: 5vh;
+    gap: 3vh;
     overflow: hidden;
   
     background-image: url("../illustrations/croissant/illustrations_yellow_croissant.png");
@@ -124,6 +124,92 @@
     font-style: normal;
   }
 
+  .gallery-grid {
+    padding: 5vh;
+    height: 200vh;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    gap: 2vh;
+    border-bottom: 1px solid #95261F;
+  }
+  .gallery-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .gallery-grid h3 {
+    color: #95261F;
+    font-weight: 100;            
+    text-align: center;
+    font-size: 2vw;
+    font-style: normal;
+    align-self: end;
+  }
+
+
+  /* ------------------- FOOTER SECTION ------------------- */
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5vh 0;
+  width: 100vw;
+  height: 30vh;
+  background-color: #BAD3EE;
+  background-image: url("../illustrations/croissant/illustrations_yellow_croissant.png");
+  background-repeat: repeat;
+  background-size: 25%;
+  }
+  
+  .footer__nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .footer__logo {
+  max-width: 40%;
+  height: auto;
+  display: block;
+  }
+  
+  .footer__link {
+  color: #95261F;
+  font-weight: 100;
+  font-size: 1.6vw;
+  line-height: 1.8;
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 1px solid #95261F;
+  padding-bottom: 2px;
+  }
+  
+  .footer__info {
+  display: flex;
+  flex-direction: row;
+  gap: 5vw;
+  padding-right: 10vh;
+  }
+  
+  .footer__column {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  }
+  
+  .footer__text {
+  color: #95261F;
+  font-weight: 100;
+  font-size: 1.6vw;
+  font-style: normal;
+  margin: 0;
+  margin-bottom: 6%;
+  }
+
 /* ------------------- MOBILE RESPONSIVENESS ------------------- */
 @media (max-width: 768px) {
     .hero__text h2 {
@@ -136,5 +222,27 @@
     
     .hero {
         background-size: 35%;
+    }
+
+    .gallery-grid h3 {
+      font-size: 4vw;
+    }
+
+
+    .footer__link {
+      font-size: 3vw;
+    }
+  
+    .footer__text {
+      font-size: 3vw;
+    }
+  
+    .footer__info {
+      padding-right: 4vh;
+    }
+  
+    .footer {
+      padding: 1vh 0;
+      background-size: 45%;
     }
 }
