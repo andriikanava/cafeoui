@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Cafe OUI</title>
+    <title>Gallery - Cafe OUI</title>
     <link rel="stylesheet" href="./static/styles/gallery.css">
 </head>
 <body>
@@ -13,34 +13,40 @@
         <a href="index.html" class="hero__logo-link">
             <img class="hero__logo" src="static/logos/Logo-01.png" alt="Cafe OUI Logo">
         </a>
-        <div class="hero__text">
-            <h2>A glimpse into OUI</h2>
-            <h3>Step inside our atmosphere — light, calm, and elegantly French.</h3>
-        </div>
-
         
-        <a class="hero__scroll-button" href="#philosophy">
-            <img src="static/illustrations/arrow_drop_down.png" alt="Scroll down to philosophy section">
+        <div class="hero__text">
+            <h2 class="hero__title">A glimpse into OUI</h2>
+            <h3 class="hero__subtitle">Step inside our atmosphere — light, calm, and elegantly French.</h3>
+        </div>
+        
+        <a class="hero__scroll-button" href="#gallery">
+            <img src="static/illustrations/arrow_drop_down.png" alt="Scroll down to gallery">
         </a>
     </header>
 
-    <div class="gallery-grid">
-        <img src="static/photos/pexels-maria-tyutina-814264.jpg" alt="tea" style="grid-area: 1 / 1 / 4 / 8;">
-        <h3 style="grid-area: 3 / 8 / 3 / 10;">Savor the moment.</h3>
-        <img src="static/photos/pexels-rathaphon-nanthapreecha-6809019cutted.jpg" alt="croisants" style="grid-area: 4 / 1 / 7 / 12;">
-        <h3 style="grid-area: 7 / 1 / 7 / 12; text-align: left;">Parisian calm, every day.</h3>
-        <img src="static/photos/pexels-chevanon-photography-302904.jpg" alt="coffe" style="grid-area: 8 / 1 / 12 / 6;">
-        <img src="static/photos/pexels-ready-made-3850327.jpg" alt="raw croisants" style="grid-area: 8 / 6 / 12 / 12;">
-        <h3 style="grid-area: 12 / 1 / 12 / 12;">Elegance in every detail.</h3>
-        <img src="static/photos/pexels-chevanon-photography-302894.jpg" alt="coffe machine" style="grid-area: 13 / 1 / 17 / 12;">
-        <img src="static/photos/pexels-lilartsy-1793035.jpg" alt="tea" style="grid-area: 17 / 1 / 21 / 12;">
-    </div>
+    <main class="main-content">
+        <!-- GALLERY SECTION -->
+        <section id="gallery" class="gallery-grid">
+            <img src="static/photos/pexels-maria-tyutina-814264.jpg" alt="Elegant tea service" style="grid-area: 1 / 1 / 4 / 8;">
+            <h3 class="gallery__caption" style="grid-area: 3 / 8 / 3 / 10;">Savor the moment.</h3>
+            
+            <img src="static/photos/pexels-rathaphon-nanthapreecha-6809019cutted.jpg" alt="Fresh croissants" style="grid-area: 4 / 1 / 7 / 12;">
+            <h3 class="gallery__caption" style="grid-area: 7 / 1 / 7 / 12; text-align: left;">Parisian calm, every day.</h3>
+            
+            <img src="static/photos/pexels-chevanon-photography-302904.jpg" alt="Coffee preparation" style="grid-area: 8 / 1 / 12 / 6;">
+            <img src="static/photos/pexels-ready-made-3850327.jpg" alt="Raw croissants" style="grid-area: 8 / 6 / 12 / 12;">
+            <h3 class="gallery__caption" style="grid-area: 12 / 1 / 12 / 12;">Elegance in every detail.</h3>
+            
+            <img src="static/photos/pexels-chevanon-photography-302894.jpg" alt="Coffee machine" style="grid-area: 13 / 1 / 17 / 12;">
+            <img src="static/photos/pexels-lilartsy-1793035.jpg" alt="Artistic coffee" style="grid-area: 17 / 1 / 21 / 12;">
+        </section>
+    </main>
 
-     <!-- FOOTER SECTION -->
-     <footer class="footer">
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
         <nav class="footer__nav">
             <img class="footer__logo" src="static/logos/Logo-01.png" alt="Cafe OUI Logo">
-            <a href="#" class="footer__link">Menu</a>
+            <a href="menu.html" class="footer__link">Menu</a>
             <a href="about.html" class="footer__link">About us</a>
             <a href="#" class="footer__link">Impressions</a>
             <a href="contacts.html" class="footer__link">Contact</a>
@@ -59,5 +65,5 @@
             </div>
         </div>
     </footer>
-
 </body>
+</html>
