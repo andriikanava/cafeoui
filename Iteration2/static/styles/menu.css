@@ -99,6 +99,7 @@ html {
   display: flex;                  /* выстраиваем в ряд */
   justify-content: space-between; /* равномерное расстояние */
   align-items: flex-start;        /* текст сверху линий */
+  flex-wrap: wrap; 
   width: 100%;                    /* растягиваем на всю ширину контейнера */
   gap: 20px;                      /* промежуток между кнопками */
 }
@@ -123,6 +124,26 @@ html {
   height: 4px;                    /* толщина линии */
   width: 70%;                     /* растягивается на ширину кнопки */
   background-color: #00657C;         /* цвет линии */
+}
+
+.language__button {
+  position: absolute;
+  bottom: 5vh;  /* отступ снизу относительно высоты секции */
+  right: 5vw;   /* отступ справа относительно ширины секции */
+  color: #95261F;
+  font-size: 2vw;
+  padding: 1em;
+  text-decoration: none;
+  text-align: center;
+}
+
+.back__button {
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+  color: #95261F;
+  padding: 1em;
+  object-fit: cover;
 }
 
 .menu__section {
@@ -296,6 +317,20 @@ margin-bottom: 6%;
 
   .menu__container {
       flex-direction: column;
+  }
+
+  .language__button {
+    font-size: 5vw;
+    bottom: 5vh;
+  }
+
+  .back__button {
+    top: auto;
+    bottom: 5vh;
+    left: 5vw;
+  }
+  .back__button img {
+    width: 3rem;
   }
 
   .menu__list {
