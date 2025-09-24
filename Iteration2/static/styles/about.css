@@ -103,6 +103,28 @@
   .hero__logo {
     padding-top: 25vh;
   }
+
+
+  .language__button {
+    position: absolute;
+    bottom: 5vh;  /* отступ снизу относительно высоты секции */
+    right: 5vw;   /* отступ справа относительно ширины секции */
+    color: #95261F;
+    font-size: 2vw;
+    padding: 1em;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .back__button {
+    position: absolute;
+    top: 5vh;
+    left: 5vw;
+    color: #95261F;
+    padding: 1em;
+    object-fit: cover;
+  }
+
   
   /* ------------------- CONTENT SECTIONS ------------------- */
   .content-section {
@@ -263,6 +285,17 @@
         max-width: 90vw;
         padding-top: 15vh;
         flex-direction: column;
+    }
+
+    .language__button {
+      font-size: 5vw;
+      bottom: 5vh;
+    }
+  
+    .back__button {
+      top: auto;
+      bottom: 5vh;
+      left: 5vw;
     }
 
     .croissant__container .image__container img {
