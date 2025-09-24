@@ -83,6 +83,7 @@ html {
   width: 100vw;
   height: 100vh;
   border-bottom: 1px solid black;
+  position: relative;
 }
 
 .hero__container {
@@ -132,6 +133,18 @@ html {
   margin-top: auto;
   margin-bottom: 2vh;
 }
+
+.language__button {
+  position: absolute;
+  bottom: 5vh;  /* отступ снизу относительно высоты секции */
+  right: 5vw;   /* отступ справа относительно ширины секции */
+  color: #95261F;
+  font-size: 2vw;
+  padding: 1em;
+  text-decoration: none;
+  text-align: center;
+}
+
 
 /* ------------------- ABOUT SECTION ------------------- */
 .about {
@@ -189,6 +202,56 @@ html {
   font-size: 2vw;
   font-style: italic;
   text-decoration: none;
+}
+
+/* ------------------- VEGAN SECTION ------------------- */
+.vegan {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  border-bottom: 1px solid black;
+  position: relative;
+}
+
+.vegan__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 20vh); 
+  gap: 2%;
+  max-width: 80vw;
+  height: 100vh;
+  padding-top: 10vh;
+}
+
+.vegan__item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  display: block;
+}
+
+.vegan__text {
+  color: #95261F;
+  font-weight: 100;
+  font-size: 2vw;
+  font-style: italic;
+  line-height: 1.8;
+  margin: 0 0 2rem 0;
+}
+
+.vegan__link {
+  color: #95261F;
+  font-weight: 500;
+  font-size: 2vw;
+  font-style: italic;
+  width: 20vh;
+  padding-bottom: 10vh;
+  text-decoration: none;
+  align-self: flex-end;
 }
 
 /* ------------------- GALLERY SECTION ------------------- */
@@ -320,6 +383,11 @@ html {
   .footer__link {
     font-size: 3vw;
   }
+
+  .language__button {
+    font-size: 5vw;
+    bottom: 2vh;
+  }
   
   .footer__text {
     font-size: 3vw;
@@ -379,5 +447,14 @@ html {
     font-size: 5vw;
     align-self: flex-start;
     padding-left: 5vh;
+  }
+
+  .vegan__link {
+    font-size: 4.5vw;
+  }
+
+  .vegan__text {
+    margin-bottom: 0;
+    font-size: 4.5vw;
   }
 }
