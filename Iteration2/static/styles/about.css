@@ -297,6 +297,9 @@
       bottom: 5vh;
       left: 5vw;
     }
+    .back__button img {
+      width: 3rem;
+    }
 
     .croissant__container .image__container img {
       object-fit: cover;
