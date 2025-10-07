@@ -240,7 +240,7 @@ justify-content: space-between;
 align-items: center;
 padding: 5vh 0;
 width: 100vw;
-height: 30vh;
+/* height: 30vh; */
 background-color: #BAD3EE;
 background-image: url("../illustrations/croissant/illustrations_yellow_croissant.png");
 background-repeat: repeat;

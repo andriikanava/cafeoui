@@ -301,7 +301,7 @@ html {
   align-items: center;
   padding: 5vh 0;
   width: 100vw;
-  height: 30vh;
+  /* height: 30vh; */
   background-color: #EDE5BB;
   background-image: url("../illustrations/croissant/illustrations_light blue_croissant.png");
   background-repeat: repeat;
